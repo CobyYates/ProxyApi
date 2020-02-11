@@ -18,6 +18,11 @@ Once you have your server setup, you will need to add some end points. Take a lo
 ### 2 Server
 ![Two Server Setup](/2-Server.png)
 
+### Conclusion
+This solves the issues above in the following ways.
+1. If the external API uses an API key, you have now secured/hidden it on a server. It is no longer accessable to the client.
+2. CORS is a browser security issue, by making the request from a server you have solved that issue. In production, you would want to take steps to ensure this is more secure, but for development this is good enough.
+
 
 ### Example with Create-React-App
 1. Create server.js file
